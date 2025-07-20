@@ -1,0 +1,124 @@
+.hero-section {
+  background: linear-gradient(120deg, #15284A 60%, #54AFE5 100%);
+  color: #fff;
+  padding: 4rem 0 2.5rem 0;
+  overflow: hidden;
+}
+.hero-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2.5rem;
+  max-width: 1180px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+.hero-copy {
+  flex: 1 1 340px;
+  display: flex;
+  flex-direction: column;
+  gap: 2.2rem;
+  min-width: 290px;
+}
+.hero-headline {
+  font-size: 2.7rem;
+  font-weight: 700;
+  line-height: 1.08;
+  margin: 0;
+  letter-spacing: -1px;
+}
+.highlight-primary {
+  color: #54AFE5;
+}
+.hero-subheadline {
+  font-size: 1.27rem;
+  font-weight: 400;
+  margin-top: -15px;
+  margin-bottom: 0.8rem;
+  color: #d1eafe;
+  line-height: 1.4;
+}
+.hero-ctas {
+  display: flex;
+  gap: 1.25rem;
+  margin-top: 1.2rem;
+}
+.btn {
+  display: inline-block;
+  font-size: 1.05rem;
+  font-weight: 600;
+  border-radius: 24px;
+  padding: 13px 36px;
+  text-decoration: none;
+  transition: all 0.18s cubic-bezier(.65,0,.76,1);
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+.btn-primary {
+  background: #54AFE5;
+  color: #15284A;
+  box-shadow: 0 4px 20px 0 #1f90cf22;
+}
+.btn-primary:hover, .btn-primary:focus {
+  background: #2A81C9;
+  color: #fff;
+}
+.btn-secondary {
+  background: #15284A;
+  color: #fff;
+  border: 1.5px solid #fff;
+}
+.btn-secondary:hover, .btn-secondary:focus {
+  background: #fff;
+  color: #15284A;
+  border: 1.5px solid #54AFE5;
+}
+.hero-graphic {
+  flex: 1 1 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 240px;
+  padding-left: 10px;
+}
+.hero-graphic svg {
+  display: block;
+  max-width: 340px;
+  width: 100%;
+  height: auto;
+  filter: drop-shadow(0 8px 32px rgba(21,40,74,0.15));
+}
+@media (max-width: 1000px) {
+  .hero-content {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0 24px;
+  }
+  .hero-graphic {
+    justify-content: flex-start;
+  }
+}
+@media (max-width: 620px) {
+  .hero-section {
+    padding: 2.1rem 0 1.3rem 0;
+  }
+  .hero-copy {
+    gap: 1.1rem;
+    min-width: unset;
+  }
+  .hero-headline {
+    font-size: 2rem;
+  }
+  .hero-subheadline {
+    font-size: 1.03rem;
+  }
+  .btn {
+    font-size: 0.96rem;
+    padding: 10px 20px;
+  }
+  .hero-graphic {
+    padding-left: 0;
+    margin: 1.5rem auto 0 auto;
+  }
+}

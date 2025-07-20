@@ -1,0 +1,123 @@
+.diff-section {
+  background: #f6f9fc;
+  padding: 3.3rem 0 3.3rem 0;
+}
+.diff-grid {
+  max-width: 1180px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 2.7rem;
+}
+.diff-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 2.4rem;
+  margin-bottom: 0.9rem;
+}
+.diff-row-reverse {
+  flex-direction: row-reverse;
+}
+.diff-copy {
+  flex: 1 1 310px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+  min-width: 210px;
+}
+.diff-icon {
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  margin-bottom: 0.3rem;
+  justify-content: center;
+}
+.diff-copy h2 {
+  font-size: 1.37rem;
+  font-weight: 700;
+  margin-bottom: 0.3rem;
+  color: #15284A;
+}
+.diff-copy p {
+  font-size: 1.04rem;
+  color: #53616C;
+  margin-bottom: 0.6rem;
+}
+.diff-media {
+  flex: 1 1 180px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 160px;
+}
+.diff-media-infographic,
+.diff-media-animation {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 2px 16px 0 #eee;
+  padding: 20px 14px 16px 22px;
+}
+.diff-carousel {
+  margin: 1.8rem auto 0 auto;
+  background: #fff;
+  border-radius: 15px;
+  box-shadow: 0 4px 16px 0 #54AFE504;
+  max-width: 680px;
+  padding: 2rem 1.3rem 1rem 1.3rem;
+  text-align: center;
+  position: relative;
+}
+.diff-carousel-title {
+  margin-bottom: 0.8rem;
+  font-weight: 700;
+  color: #15284A;
+  font-size: 1.07rem;
+  opacity: 0.82;
+}
+.diff-carousel-quote blockquote {
+  font-size: 1.01rem;
+  color: #53616C;
+  font-style: italic;
+  margin: 0 0 0.2rem 0;
+}
+.diff-carousel-quote footer {
+  color: #54AFE5;
+  font-weight: 700;
+  margin-top: 0.3rem;
+  font-size: 0.99rem;
+}
+.diff-carousel-controls {
+  margin-top: 0.9rem;
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+}
+.diff-carousel-controls button {
+  background: #f8f8fc;
+  color: #15284A;
+  border-radius: 50%;
+  border: 1.5px solid #E87A41;
+  font-size: 1.2rem;
+  width: 2.3rem;
+  height: 2.3rem;
+  cursor: pointer;
+  font-weight: 700;
+  transition: box-shadow 0.12s;
+}
+.diff-carousel-controls button:hover,
+.diff-carousel-controls button:focus {
+  background: #E87A41;
+  color: #fff;
+}
+@media (max-width: 870px) {
+  .diff-row, .diff-row-reverse {
+    flex-direction: column !important;
+    gap: 1.4rem;
+  }
+  .diff-copy, .diff-media {
+    min-width: unset;
+  }
+}

@@ -1,0 +1,46 @@
+.logo-section {
+  background: #fff;
+  padding: 2.45rem 0 2rem 0;
+}
+.logo-header {
+  text-align: center;
+  margin-bottom: 1.8rem;
+}
+.logo-header h2 {
+  color: #15284A;
+  font-size: 1.32rem;
+  font-weight: 700;
+  margin-bottom: 0.45rem;
+  letter-spacing: -0.5px;
+}
+.logo-header p {
+  color: #53616C;
+  font-size: 1.01rem;
+  margin: 0;
+}
+.logo-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  gap: 2.2rem 1.7rem;
+  justify-items: center;
+  align-items: center;
+}
+.logo-item {
+  background: transparent;
+  border-radius: 9px;
+  padding: 0.7rem 0;
+  transition: box-shadow 0.13s;
+  width: 66px;
+  height: 54px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.logo-item:hover, .logo-item:focus {
+  box-shadow: 0 2px 14px 0 #54AFE511;
+}
+@media (max-width: 700px) {
+  .logo-grid {
+    gap: 1.1rem 0.7rem;
+  }
+}

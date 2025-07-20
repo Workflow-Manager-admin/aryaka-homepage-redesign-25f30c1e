@@ -1,0 +1,79 @@
+.usecase-section {
+  background: #f8fafd;
+  padding: 2.8rem 0 2.7rem 0;
+}
+.usecase-title {
+  text-align: center;
+  color: #15284A;
+  font-size: 1.19rem;
+  font-weight: 700;
+  margin-bottom: 1.7rem;
+}
+.usecase-grid {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  align-items: stretch;
+  flex-wrap: wrap;
+  max-width: 970px;
+  margin: 0 auto;
+}
+.usecase-card {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 4px 16px 0 #54AFE510;
+  padding: 1.7rem 1.3rem 1.3rem 1.3rem;
+  min-width: 200px;
+  max-width: 291px;
+  flex: 1 1 180px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1.05rem;
+  transition: box-shadow 0.13s, transform 0.12s;
+}
+.usecase-card:hover, .usecase-card:focus-within {
+  box-shadow: 0 6px 20px 0 #54AFE522;
+  transform: translateY(-3px) scale(1.018);
+}
+.use-icon {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  margin-bottom: 2px;
+  justify-content: center;
+}
+.use-icon-blue {
+  background: #54AFE5;
+}
+.use-icon-orange {
+  background: #E87A41;
+}
+.use-icon-grey {
+  background: #53616C;
+}
+.usecase-card h4 {
+  font-size: 1.01rem;
+  color: #15284A;
+  font-weight: 600;
+  margin: 0;
+}
+.usecase-card p {
+  color: #53616C;
+  font-size: 0.97rem;
+  margin: 0;
+}
+@media (max-width: 950px) {
+  .usecase-grid {
+    gap: 1rem;
+    padding: 0 18px;
+  }
+}
+@media (max-width: 700px) {
+  .usecase-grid {
+    flex-direction: column;
+    gap: 1.1rem;
+  }
+}
