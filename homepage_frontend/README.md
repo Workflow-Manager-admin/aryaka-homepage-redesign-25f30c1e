@@ -13,6 +13,33 @@ This project provides a minimal React template with a clean, modern UI and minim
 
 In the project directory, you can run:
 
+---
+
+## Developer Cache-Busting & Stale Style Fix
+
+If you see outdated styles, images, or design after updating the code **in dev or preview**:
+
+1. **Stop the dev server (`npm start`).**
+2. **Delete build and cache artifacts:**
+   ```sh
+   rm -rf build node_modules/.cache
+   ```
+3. **(Optional) Clear `node_modules` and reinstall:**
+   ```sh
+   rm -rf node_modules
+   npm install
+   ```
+4. **Restart the dev server:**
+   ```sh
+   npm start
+   ```
+5. **Hard-refresh your browser** (Ctrl+Shift+R or Shift+Reload).
+
+> This project does NOT use a service worker (PWA caching), and `src/index.js` will automatically unregister any old SW on load.
+> Stale styles are almost always due to a local build/browser cache.
+
+---
+
 ### `npm start`
 
 Runs the app in development mode.\
