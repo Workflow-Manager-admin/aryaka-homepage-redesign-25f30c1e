@@ -1,79 +1,256 @@
 :root {
-  /* Aryaka Brand Colors */
+  /* Aryaka Brand Palette */
   --aryaka-blue: #00ADEF;
   --aryaka-navy: #1A2E3B;
   --aryaka-gray: #F5F7FA;
   --aryaka-white: #FFFFFF;
 
-  --bg-primary: var(--aryaka-white);
-  --bg-secondary: var(--aryaka-gray);
   --text-primary: var(--aryaka-navy);
-  --text-secondary: var(--aryaka-blue);
+  --text-secondary: #53616C;
   --cta-bg: var(--aryaka-blue);
   --cta-text: var(--aryaka-white);
-  --border-color: #E1E6ED;
+
+  --border-light: #E1E6ED;
+  --font-family: 'Segoe UI', 'Roboto', 'Oxygen', 'Helvetica Neue', Arial, sans-serif;
+}
+
+html, body {
+  background: var(--aryaka-gray);
+  color: var(--text-primary);
+  font-family: var(--font-family);
+  font-size: 18px;
+  font-weight: 400;
+  letter-spacing: 0.025em;
+  margin: 0;
+  min-height: 100%;
 }
 
 .App {
-  text-align: center;
-  background: var(--bg-primary);
+  background: var(--aryaka-white);
   color: var(--text-primary);
   min-height: 100vh;
-  transition: background-color 0.3s, color 0.3s;
+}
+
+main {
+  width: 100%;
+  background: var(--aryaka-white);
+  margin: 0;
+  padding: 0;
 }
 
 .container {
   width: 100%;
-  max-width: 1280px;
+  max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
-  padding-left: 16px;
-  padding-right: 16px;
+  padding-left: 32px;
+  padding-right: 32px;
   box-sizing: border-box;
 }
 
-/* Nav and App-header – use navy background */
-.App-header {
+h1, h2, h3, h4, h5 {
+  color: var(--aryaka-navy);
+  font-family: var(--font-family);
+  font-weight: 700;
+  margin-top: 0;
+  letter-spacing: -0.5px;
+}
+
+h1 {
+  font-size: 2.8rem;
+  line-height: 1.08;
+}
+
+h2 {
+  font-size: 2rem;
+  line-height: 1.14;
+}
+
+h3 {
+  font-size: 1.25rem;
+}
+
+h4 {
+  font-size: 1.09rem;
+}
+
+p, li, a {
+  font-size: 1rem;
+  color: var(--text-secondary);
+  margin: 0;
+}
+
+a {
+  color: var(--aryaka-blue);
+  text-decoration: none;
+  transition: color 0.16s;
+}
+
+a:hover, a:focus {
+  color: var(--aryaka-navy);
+  text-decoration: underline;
+}
+
+.btn {
+  display: inline-block;
+  border-radius: 24px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  text-align: center;
+  padding: 15px 38px;
+  outline: none;
+  border: none;
+  margin: 0;
+  cursor: pointer;
+  transition: background 0.18s, color 0.18s, border 0.18s, box-shadow 0.14s;
+  font-family: var(--font-family);
+  box-shadow: none;
+}
+
+.btn-primary {
+  background: var(--cta-bg);
+  color: var(--cta-text);
+  border: 2px solid var(--cta-bg);
+}
+.btn-primary:hover, .btn-primary:focus {
   background: var(--aryaka-navy);
-  color: var(--aryaka-white);
-  min-height: 6rem;
+  border-color: var(--aryaka-navy);
+  color: var(--cta-text);
+}
+
+.btn-secondary {
+  background: var(--aryaka-white);
+  color: var(--aryaka-blue);
+  border: 2px solid var(--aryaka-blue);
+}
+.btn-secondary:hover, .btn-secondary:focus {
+  background: var(--aryaka-navy);
+  color: var(--cta-text);
+  border-color: var(--aryaka-navy);
+}
+.btn-large {
+  font-size: 1.15rem;
+  font-weight: 700;
+  padding: 18px 45px;
+}
+
+/* Section backgrounds */
+.section-navy {
+  background: var(--aryaka-navy);
+  color: #fff;
+}
+.section-gray {
+  background: var(--aryaka-gray);
+}
+.section-white {
+  background: var(--aryaka-white);
+}
+.section-divider {
+  border-bottom: 1.5px solid var(--border-light);
+}
+
+/* Utility classes */
+.text-center {
+  text-align: center !important;
+}
+.mt-0 { margin-top: 0 !important; }
+.mb-0 { margin-bottom: 0 !important; }
+.py-0 { padding-top: 0 !important; padding-bottom: 0 !important; }
+
+.icon-circle-flat {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  transition: background 0.3s;
-  position: relative;
-}
-
-.App-link {
-  color: var(--aryaka-blue);
-  transition: color 0.3s;
-}
-
-.theme-toggle {
-  position: absolute;
-  top: 20px;
-  right: 20px;
+  border-radius: 50%;
+  width: 56px;
+  height: 56px;
   background: var(--aryaka-blue);
-  color: var(--aryaka-white);
-  border: none;
-  border-radius: 8px;
-  padding: 10px 20px;
-  font-size: 14px;
-  font-weight: 600;
-  cursor: pointer;
-  transition: opacity 0.3s;
+  margin-bottom: 6px;
   box-shadow: none;
 }
-.theme-toggle:hover, .theme-toggle:focus {
-  opacity: 0.9;
+
+.sr-only {
+  position: absolute;
+  left: -9999px;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(1px, 1px, 1px, 1px);
+  white-space: nowrap;
+  border: none;
+  padding: 0;
+  margin: 0;
 }
 
+/* Header / navigation */
+.App-header {
+  background: var(--aryaka-navy);
+  color: var(--aryaka-white);
+  min-height: 6.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.8rem;
+  font-weight: 800;
+  letter-spacing: -1.2px;
+  transition: background 0.3s;
+  position: relative;
+  z-index: 90;
+}
+
+/* Theme toggle button more visually bold */
+.theme-toggle {
+  position: absolute;
+  top: 24px;
+  right: 32px;
+  background: var(--cta-bg);
+  color: var(--cta-text);
+  border: none;
+  border-radius: 10px;
+  padding: 13px 28px;
+  font-size: 15px;
+  font-weight: 700;
+  cursor: pointer;
+  box-shadow: none;
+  letter-spacing: 1px;
+  outline: 2px solid transparent;
+  outline-offset: 1.5px;
+  transition: background 0.15s, color 0.15s, outline 0.13s;
+}
+.theme-toggle:hover, .theme-toggle:focus {
+  background: var(--aryaka-navy);
+  color: var(--cta-text);
+  outline: 2px solid var(--aryaka-blue);
+}
+
+/* Responsive: Bring spacing, heading, and button sizing in line on mobile */
+@media (max-width: 1050px) {
+  .container {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  .btn-large {
+    padding: 13px 24px;
+    font-size: 1.03rem;
+  }
+}
 @media (max-width: 768px) {
+  h1 { font-size: 2.1rem; }
+  h2 { font-size: 1.4rem; }
   .theme-toggle {
     top: 10px;
     right: 10px;
-    padding: 8px 16px;
-    font-size: 12px;
+    padding: 8px 13px;
+    font-size: 13px;
+  }
+}
+@media (max-width: 520px) {
+  .container {
+    padding-left: 6px;
+    padding-right: 6px;
+  }
+  .btn, .btn-large, .btn-primary, .btn-secondary {
+    padding: 10px 12px !important;
+    font-size: 0.95rem;
   }
 }
