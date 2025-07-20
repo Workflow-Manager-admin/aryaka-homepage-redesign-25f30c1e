@@ -1,11 +1,11 @@
 .resources-section {
   background: #fff;
   padding: 2.7rem 0 2.4rem 0;
-  border-top: 1px solid #ececec;
+  border-top: 1px solid #E1E6ED;
 }
 .resources-title {
   text-align: center;
-  color: #15284A;
+  color: #1A2E3B;
   font-size: 1.11rem;
   font-weight: 700;
   letter-spacing: 0.2px;
@@ -24,28 +24,27 @@
   flex: 1 1 200px;
   min-width: 210px;
   max-width: 317px;
-  background: #f6fafe;
-  border: 1px solid #54AFE5;
+  background: #F5F7FA;
+  border: 2px solid #00ADEF;
   border-radius: 13px;
-  box-shadow: 0 2px 14px #15284A07;
+  box-shadow: none;
   padding: 1.25rem 1.1rem;
   display: flex;
   flex-direction: column;
   gap: 0.7rem;
   text-decoration: none;
-  color: #15284A;
-  transition: box-shadow 0.14s, border-color 0.17s, background 0.1s;
+  color: #1A2E3B;
+  transition: border-color 0.18s, background 0.1s;
 }
 .resources-card.active,
 .resources-card:focus,
 .resources-card:hover {
-  box-shadow: 0 6px 22px #15284A18;
   background: #fff;
-  border-color: #E87A41;
+  border-color: #00ADEF;
   outline: none;
 }
 .resources-label {
-  background: #E87A41;
+  background: #00ADEF;
   color: #fff;
   font-size: 0.78rem;
   padding: 5px 14px 5px 14px;
@@ -58,7 +57,7 @@
 .resources-card h4 {
   font-size: 1.01rem;
   font-weight: 600;
-  color: #15284A;
+  color: #1A2E3B;
   margin: 0 0 4px 0;
 }
 .resources-card p {

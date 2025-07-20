@@ -1,5 +1,5 @@
 .diff-section {
-  background: #f6f9fc;
+  background: #F5F7FA;
   padding: 3.3rem 0 3.3rem 0;
 }
 .diff-grid {
@@ -34,12 +34,13 @@
   align-items: center;
   margin-bottom: 0.3rem;
   justify-content: center;
+  background: #00ADEF;
 }
 .diff-copy h2 {
   font-size: 1.37rem;
   font-weight: 700;
   margin-bottom: 0.3rem;
-  color: #15284A;
+  color: #1A2E3B;
 }
 .diff-copy p {
   font-size: 1.04rem;
@@ -55,16 +56,16 @@
 }
 .diff-media-infographic,
 .diff-media-animation {
-  background: white;
+  background: #fff;
   border-radius: 12px;
-  box-shadow: 0 2px 16px 0 #eee;
+  box-shadow: none;
   padding: 20px 14px 16px 22px;
 }
 .diff-carousel {
   margin: 1.8rem auto 0 auto;
   background: #fff;
   border-radius: 15px;
-  box-shadow: 0 4px 16px 0 #54AFE504;
+  box-shadow: none;
   max-width: 680px;
   padding: 2rem 1.3rem 1rem 1.3rem;
   text-align: center;
@@ -73,9 +74,9 @@
 .diff-carousel-title {
   margin-bottom: 0.8rem;
   font-weight: 700;
-  color: #15284A;
+  color: #1A2E3B;
   font-size: 1.07rem;
-  opacity: 0.82;
+  opacity: 0.94;
 }
 .diff-carousel-quote blockquote {
   font-size: 1.01rem;
@@ -84,7 +85,7 @@
   margin: 0 0 0.2rem 0;
 }
 .diff-carousel-quote footer {
-  color: #54AFE5;
+  color: #00ADEF;
   font-weight: 700;
   margin-top: 0.3rem;
   font-size: 0.99rem;
@@ -96,20 +97,20 @@
   justify-content: center;
 }
 .diff-carousel-controls button {
-  background: #f8f8fc;
-  color: #15284A;
+  background: #F5F7FA;
+  color: #1A2E3B;
   border-radius: 50%;
-  border: 1.5px solid #E87A41;
+  border: 1.5px solid #00ADEF;
   font-size: 1.2rem;
   width: 2.3rem;
   height: 2.3rem;
   cursor: pointer;
   font-weight: 700;
-  transition: box-shadow 0.12s;
+  transition: background 0.12s, color 0.12s;
 }
 .diff-carousel-controls button:hover,
 .diff-carousel-controls button:focus {
-  background: #E87A41;
+  background: #00ADEF;
   color: #fff;
 }
 @media (max-width: 870px) {

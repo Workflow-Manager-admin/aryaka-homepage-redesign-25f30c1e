@@ -1,5 +1,5 @@
 .cta-section {
-  background: linear-gradient(94deg, #54AFE5 62%, #15284A 100%);
+  background: #00ADEF;
   color: #fff;
   padding: 3.2rem 0 2.5rem 0;
 }
@@ -16,7 +16,7 @@
   color: #fff;
 }
 .cta-highlight {
-  color: #E87A41;
+  color: #1A2E3B;
   font-weight: 800;
 }
 .cta-actions {
@@ -28,6 +28,27 @@
 .btn-large {
   font-size: 1.15rem;
   padding: 16px 36px;
+  border-radius: 24px;
+}
+.btn-primary {
+  background: #fff;
+  color: #00ADEF;
+  border: 2px solid #fff;
+}
+.btn-primary:hover, .btn-primary:focus {
+  background: #1A2E3B;
+  color: #fff;
+  border: 2px solid #1A2E3B;
+}
+.btn-secondary {
+  background: #1A2E3B;
+  color: #fff;
+  border: 2px solid #fff;
+}
+.btn-secondary:hover, .btn-secondary:focus {
+  background: #fff;
+  color: #00ADEF;
+  border: 2px solid #00ADEF;
 }
 @media (max-width: 700px) {
   .cta-content h2 {

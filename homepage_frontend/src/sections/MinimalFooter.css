@@ -1,8 +1,8 @@
 .footer-section {
-  background: #15284A;
+  background: #1A2E3B;
   color: #fff;
   padding: 2.4rem 0 1.7rem 0;
-  border-top: 2px solid #54AFE5;
+  border-top: 3px solid #00ADEF;
 }
 .footer-grid {
   display: flex;
@@ -19,7 +19,7 @@
   margin-bottom: 1.2rem;
 }
 .footer-col h4 {
-  color: #54AFE5;
+  color: #00ADEF;
   font-weight: 700;
   margin: 0 0 8px 0;
   font-size: 1.01rem;
@@ -29,10 +29,11 @@
   margin: 0;
   padding: 0;
 }
-.footer-col li {
+.footer-col li, .footer-col li a {
   font-size: 0.97rem;
   margin-bottom: 0.37rem;
-  color: #e0e8f6;
+  color: #EAF1FA;
+  text-decoration: none;
 }
 .footer-socials {
   display: flex;
@@ -44,17 +45,17 @@
   height: 32px;
   border-radius: 8px;
   background: #fff;
-  color: #15284A;
+  color: #1A2E3B;
   text-align: center;
   font-weight: 700;
   line-height: 32px;
   font-size: 0.99rem;
   margin-right: 3px;
-  transition: background 0.14s, color 0.14s;
+  transition: background 0.13s, color 0.13s;
 }
 .footer-socials a:hover,
 .footer-socials a:focus {
-  background: #E87A41;
+  background: #00ADEF;
   color: #fff;
 }
 .footer-badges {
@@ -65,8 +66,8 @@
 }
 .footer-badge {
   display: inline-block;
-  background: #54AFE5;
-  color: #15284A;
+  background: #00ADEF;
+  color: #fff;
   border-radius: 8px;
   padding: 5px 12px;
   font-weight: 700;
@@ -75,7 +76,7 @@
 .footer-bottom {
   margin-top: 1.7rem;
   text-align: center;
-  color: #74a5d2;
+  color: #99b5cb;
   font-size: 0.92rem;
   opacity: 0.68;
 }

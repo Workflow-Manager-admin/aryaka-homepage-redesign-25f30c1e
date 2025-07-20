@@ -7,7 +7,7 @@
   margin-bottom: 1.8rem;
 }
 .logo-header h2 {
-  color: #15284A;
+  color: #1A2E3B;
   font-size: 1.32rem;
   font-weight: 700;
   margin-bottom: 0.45rem;
@@ -37,7 +37,7 @@
   justify-content: center;
 }
 .logo-item:hover, .logo-item:focus {
-  box-shadow: 0 2px 14px 0 #54AFE511;
+  box-shadow: 0 1px 2px 0 #1A2E3B10;
 }
 @media (max-width: 700px) {
   .logo-grid {
